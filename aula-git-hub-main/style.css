@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap");
+
+
+:root {
+  --cor-verde-escuro: #1e3a2b;
+  --cor-verde-medio: #4b6656;
+  --cor-verde-claro: #cfe0c3;
+  --cor-fundo: #e9efe4;
+  --cor-creme: #f7f5ec;
+  --cor-branco: #ffffff;
+  --cor-destaque: #e3b448;
+  --cor-borda: #c9d6bf;
+
+  /* Fontes */
+  --fonte-titulo: "Fraunces", serif;
+  --fonte-texto: "Source Sans 3", sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: var(--cor-verde-escuro)
+  
+}
+
+.navbar ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--cor-creme);
+    border-bottom: 2px solid transparent;
+
+}
+
+.navbar li:first-child a{
+  color: var(--cor-creme);
+  border-bottom-color: var(--cor-verde-claro);
+
+}
+
+
+
+
+.logo{
+    text-decoration: none;
+    color: var(--cor-creme);
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+}
+
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  padding: 48px 24px;
+  background-color: var(--cor-fundo);
+}
+
+.chamada {
+  flex: 1;
+}
+
+.chamada h1 {
+  margin-bottom: 16px;
+  font-family: var(--fonte-titulo);
+  font-size: 40px;
+}
+
+.chamada p{
+    font-family: var(--fonte-texto);
+}
+
+.formulario {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+
+  background-color: var(--cor-creme);
+  font-family: var(--fonte-texto);
+}
+
+.formulario button {
+  margin-top: 18px;
+  background-color: var(--cor-destaque);
+  color: var(--cor-verde-escuro);
+  font-family: var(--fonte-texto);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size:medium;
+}
+
+form input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.sobre {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 48px 24px;
+}
+
+.sobre h2{
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+}
+
+
+.sobre p{
+    font-family: var(--fonte-texto);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 24px;
+
+  background-color: var(--cor-verde-escuro);
+  color: var(--cor-branco);
+  font-family: var(--fonte-titulo);
+}
